@@ -1,0 +1,254 @@
+
+python -m venv llm-venv
+./llm-venv/Scripts/Activate 
+pip install poetry   
+poetry install --extras "ui embeddings-huggingface llms-llama-cpp vector-stores-qdrant" (after that enrror will be encountered)
+pip install charset-normalizer==3.3.2 (then run this)
+poetry install --extras "ui embeddings-huggingface llms-llama-cpp vector-stores-qdrant" (then again run this)
+
+go to huggingface create you access token  (replace this "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" with you own token)
+
+Then run:
+curl -H "Authorization: Bearer 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" https://huggingface.co/api/models/nomic-ai/nomic-embed-text-v1.5
+
+Invoke-WebRequest -Uri "https://huggingface.co/api/models/nomic-ai/nomic-embed-text-v1.5" -Headers @{ Authorization = "Bearer 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" } 
+
+poetry run python scripts/setup   
+
+pip install cmake
+
+CMAKE_ARGS="-DLLAMA_CUBLAS=OFF -DLLAMA_BLAS=ON -DLLAMA_BLAS_VENDOR=OpenBLAS" pip install --force-reinstall --no-cache-dir llama-cpp-python 
+
+$env:CMAKE_ARGS="-DLLAMA_CUBLAS=OFF -DLLAMA_BLAS=ON -DLLAMA_BLAS_VENDOR=OpenBLAS"
+pip install --force-reinstall --no-cache-dir llama-cpp-python
+
+pip install "llama-cpp-python<0.3.0" "numpy<2.0.0" "MarkupSafe~=2.0" --force-reinstall
+
+$env:PGPT_PROFILES="local"
+poetry run python -m private_gpt
+
+then paste the url into your browser : http://localhost:8001
+
+C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package
+
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/aiofiles" aiofiles
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/aiohappyeyeballs" aiohappyeyeballs
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/aiohttp" aiohttp
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/aiosignal" aiosignal
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/annotated-types" annotated-types
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/anyio" anyio
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/attrs" attrs
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/backports.tarfile" backports.tarfile
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/beautifulsoup4" beautifulsoup4
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/black" black
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/build" build
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/CacheControl" CacheControl
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/certifi" certifi
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/cffi" cffi
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/cfgv" cfgv
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/charset-normalizer" charset-normalizer
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/cleo" cleo
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/click" click
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/cmake" cmake
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/colorama" colorama
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/contourpy" contourpy
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/coverage" coverage
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/crashtest" crashtest
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/cryptography" cryptography
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/cycler" cycler
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/dataclasses-json" dataclasses-json
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/decorator" decorator
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/Deprecated" Deprecated
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/dirtyjson" dirtyjson
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/diskcache" diskcache
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/distlib" distlib
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/dnspython" dnspython
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/docx2txt" docx2txt
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/dulwich" dulwich
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/einops" einops
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/email_validator" email_validator
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/fastapi" fastapi
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/fastapi-cli" fastapi-cli
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/fastjsonschema" fastjsonschema
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/ffmpy" ffmpy
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/filelock" filelock
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/findpython" findpython
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/fonttools" fonttools
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/frozenlist" frozenlist
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/fsspec" fsspec
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/gradio" gradio
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/gradio_client" gradio_client
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/greenlet" greenlet
+
+
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/h11" h11
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/h2" h2
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/hpack" hpack
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/httpcore" httpcore
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/httptools" httptools
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/httpx" httpx
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/huggingface-hub" huggingface-hub
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/hyperframe" hyperframe
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/identify" identify
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/idna" idna
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/importlib_metadata" importlib_metadata
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/importlib_resources" importlib_resources
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/iniconfig" iniconfig
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/injector" injector
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/installer" installer
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/itsdangerous" itsdangerous
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/jaraco.classes" jaraco.classes
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/jaraco.context" jaraco.context
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/jaraco.functools" jaraco.functools
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/Jinja2" Jinja2
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/joblib" joblib
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/keyring" keyring
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/kiwisolver" kiwisolver
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llama_cpp_python" llama_cpp_python
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llama-index-core" llama-index-core
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llama-index-embeddings-huggingface" llama-index-embeddings-huggingface
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llama-index-llms-llama-cpp" llama-index-llms-llama-cpp
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llama-index-readers-file" llama-index-readers-file
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llama-index-vector-stores-qdrant" llama-index-vector-stores-qdrant
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/markdown-it-py" markdown-it-py
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/MarkupSafe" MarkupSafe
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/marshmallow" marshmallow
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/matplotlib" matplotlib
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/mdurl" mdurl
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/minijinja" minijinja
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/more-itertools" more-itertools
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/mpmath" mpmath
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/msgpack" msgpack
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/multidict" multidict
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/mypy" mypy
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/mypy-extensions" mypy-extensions
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/nest-asyncio" nest-asyncio
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/networkx" networkx
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/nltk" nltk
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/nodeenv" nodeenv
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/numpy" numpy
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/orjson" orjson
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/packaging" packaging
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pandas" pandas
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pathspec" pathspec
+
+
+
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pbs-installer" pbs-installer
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pillow" pillow
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pip" pip
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pkginfo" pkginfo
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/platformdirs" platformdirs
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pluggy" pluggy
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/poetry" poetry
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/poetry-core" poetry-core
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/portalocker" portalocker
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pre-commit" pre-commit
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/private-gpt" private-gpt
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/protobuf" protobuf
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pycparser" pycparser
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pydantic" pydantic
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pydantic_core" pydantic_core
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pydantic-extra-types" pydantic-extra-types
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pydantic-settings" pydantic-settings
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pydub" pydub
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/Pygments" Pygments
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pyparsing" pyparsing
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pypdf" pypdf
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pyproject_hooks" pyproject_hooks
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pytest" pytest
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pytest-asyncio" pytest-asyncio
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pytest-cov" pytest-cov
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/python-dateutil" python-dateutil
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/python-dotenv" python-dotenv
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/python-multipart" python-multipart
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pytz" pytz
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pywin32" pywin32
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pywin32-ctypes" pywin32-ctypes
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/PyYAML" PyYAML
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/qdrant-client" qdrant-client
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/RapidFuzz" RapidFuzz
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/regex" regex
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/requests" requests
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/requests-toolbelt" requests-toolbelt
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/retry-async" retry-async
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/rich" rich
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/ruff" ruff
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/safetensors" safetensors
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/scikit-learn" scikit-learn
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/scipy" scipy
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/semantic-version" semantic-version
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/sentence-transformers" sentence-transformers
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/setuptools" setuptools
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/shellingham" shellingham
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/six" six
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/sniffio" sniffio
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/soupsieve" soupsieve
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/SQLAlchemy" SQLAlchemy
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/starlette" starlette
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/striprtf" striprtf
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/sympy" sympy
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/tenacity" tenacity
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/threadpoolctl" threadpoolctl
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/tiktoken" tiktoken
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/tokenizers" tokenizers
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/tomlkit" tomlkit
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/torch" torch
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/tqdm" tqdm
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/transformers" transformers
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/trove-classifiers" trove-classifiers
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/typer" typer
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/types-PyYAML" types-PyYAML
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/typing_extensions" typing_extensions
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/typing-inspect" typing-inspect
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/tzdata" tzdata
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/ujson" ujson
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/urllib3" urllib3
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/uvicorn" uvicorn
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/virtualenv" virtualenv
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/watchdog" watchdog
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/watchfiles" watchfiles
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/websockets" websockets
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/wrapt" wrapt
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/yarl" yarl
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/zipp" zipp
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/zstandard" zstandard
+
+
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/torch" torch
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/transformers" transformers
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/python-pptx" python-pptx
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/Pillow" Pillow
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/pytesseract" pytesseract
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/Pillow" Pillow
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/yarl" yarl
+
+{{{{{{{{pip install "C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llama-index-llms-llama-cpp/llama_cpp_python-0.2.90.tar.gz" --no-index --find-links "file:///C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llama-index-llms-llama-cpp"}}}}}}}}
+
+pip install --no-index --find-links "file:///C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llm_cpp_cpu" llama-cpp-python
+
+
+pip install --no-index --find-links "C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/llama-index-llms-llama-cpp" -r requirements-llamacpp.txt
+
+pip install --no-index --find-links "C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/privategpt-ui" uvicorn python-multipart jinja2
+
+
+
+pip uninstall gradio -y
+
+
+pip install --no-index --find-links file:"///C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/privategpt-ui" gradio==4.29.0
+
+
+pip install --no-index --find-links="C:/Users/Mrigangana Sarkar/Desktop/privateGPT1/python-package/privategpt"-required `
+  pydantic==2.7.1 `
+  fastapi==0.110.0 `
+  gradio==4.29.0 `
+  starlette==0.36.3 `
+  anyio==4.4.0 `
+  llama-index-core==0.11.13.post1 `
+  pydantic-settings==2.5.2
+
+
+poetry run python -m private_gpt
+then paste the url into your browser : http://localhost:8001
